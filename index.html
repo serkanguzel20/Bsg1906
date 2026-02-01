@@ -131,32 +131,3 @@
   </body>
   <script src="main2.js"></script>
 </html>
-/* =========================
-   MOBILE SAFARI SCROLL FIX
-   ========================= */
-
-/* ❌ body scroll kilidini kaldır */
-html,
-body {
-  height: auto !important;
-  min-height: 100% !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* ❌ 100vh Safari bug fix */
-body {
-  position: relative !important;
-}
-
-/* ❌ fixed olan container'lar scroll'u bozuyor */
-.absImages {
-  position: absolute !important;
-}
-
-/* ❌ modal açıkken bile sayfa scroll olabilir */
-.model {
-  position: absolute !important;
-}
-
