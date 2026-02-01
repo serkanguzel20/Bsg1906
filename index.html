@@ -2,110 +2,161 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wanna be My Valentine??</title>
     <link rel="stylesheet" href="style2.css" />
+    <meta name="description" content="There is a surprise." />
+    <meta name="keywords" content="Valentine, Love, Surprise" />
+    <meta name="author" content="Prashant" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="3 days" />
+    <meta name="language" content="English" />
+    <meta name="web_author" content="Prashant" />
+    <meta name="reply-to" content="" />
+    <meta name="rating" content="general" />
+    <meta name="og:title" content="There is a Surprise" />
+    <meta name="og:description" content="There is a surprise." />
+    <meta name="og:image" content="https://i.ibb.co/k6xD4nM/New-Project.jpg" />
+    <meta name="og:url" content="https://prashant-valentine.netlify.app/" />
+    <meta name="og:site_name" content="There is a Surprise" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:type" content="website" />
+    <meta name="og:author" content="Prashant" />
+    <meta name="og:reply-to" content="" />
+    <meta name="og:web_author" content="Prashant" />
+    <meta name="og:rating" content="general" />
   </head>
-
   <body>
-    <!-- ✅ SCROLL CONTAINER -->
-    <div id="page">
+    <div class="flex f-aps">
+      <p>
+        Made with ❤️ by Serkan 
+      </a>
+    </div>
+    <h1 class="headerText" id="wedate">Will You Be My Valentine, Beyza? 🥺</h1>
+    <a href="https://ibb.co/Q3Tm8yBx"><img src="https://i.ibb.co/tTvCZVf1/Whats-App-mage-2026-02-01-at-13-31-00.jpg" alt="Whats-App-mage-2026-02-01-at-13-31-00" border="0"></a>
+    <div class="flex" id="btns">
+      <button
+        class="button"
+        id="yes"
+        onmouseenter="happy()"
+        onmouseleave="normal()"
+        onclick="yes()"
+      >
+        Evet 🥰
+      </button>
+      <button
+        class="button"
+        id="no"
+        onmouseenter="angry()"
+        onmouseleave="normal()"
+        onclick="no()"
+      >
+        Hayır 😭
+      </button>
+    </div>
+    <div class="absImages" id="absImg">
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
+      <img class="image1" src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" alt="heyy" />
 
-      <div class="flex f-aps">
-        <p>Made with ❤️ by Serkan</p>
-      </div>
-
-      <h1 class="headerText" id="wedate">
-        Will You Be My Valentine, Beyza? 🥺
-      </h1>
-
-      <img
-        src="https://i.ibb.co/tTvCZVf1/Whats-App-mage-2026-02-01-at-13-31-00.jpg"
-        alt="photo"
-        style="display:block;margin:auto;max-width:90%;"
-      />
-
-      <div class="flex" id="btns">
-        <button class="button" id="yes" onclick="yes()">Evet 🥰</button>
-        <button class="button" id="no" onclick="no()">Hayır 😭</button>
-      </div>
-
-      <div class="absImages" id="absImg">
-        <img src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" />
-        <img src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" />
-        <img src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" />
-        <img src="https://github.com/NikhilMarko03/resources/blob/main/heart.gif?raw=true" />
-      </div>
-
-      <!-- ❤️ YES MODAL -->
-      <div class="model" id="model2">
-        <audio id="happyMusic" src="./resources/happy.mp3" loop></audio>
-        <div class="model-content">
-          <p class="modelText">I Love you 😘😘</p>
-          <img
-            src="https://i.ibb.co/0yTDbGqH/Whats-App-mage-2026-02-01-at-13-40-07.jpg"
-            style="max-width:90%;"
-          />
-          <button class="button" onclick="ly2()">Love You Too 🥰</button>
-        </div>
-      </div>
-
-      <!-- 💔 NO MODAL -->
-      <div class="model" id="model">
-        <audio id="sadMusic" src="./resources/sad.mp3" loop></audio>
-        <div class="model-content">
-          <p class="modelText">Lütfenn</p>
-          <img
-            src="https://media1.tenor.com/images/9413ffc5a11722a3cc456a88810750bd/tenor.gif"
-            style="max-width:90%;"
-          />
-          <div class="flex">
-            <button class="button" onclick="yes()">Evet 🥰</button>
-            <button class="button" onclick="no()">Hayır 😭</button>
-          </div>
-        </div>
-      </div>
-
+      <!-- <img class="image2" src="./resources/sad.gif" alt="heyy" /> -->
     </div>
 
-    <script src="main2.js"></script>
-  </body>
-</html>
-/* ✅ MOBIL SCROLL FIX */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
+    <div class="model" id="model2">
+      <audio id="happyMusic" style="opacity: 0" controls loop>
+        <source src="./resources/happy.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="model-content">
+        <p class="modelText" id="modelText2">I Love you 😘😘</p>
+        <img
+          class="modelImg"
+          id="modelImg2"
+          src="https://ibb.co/r2Y7rwkD"><img src="https://i.ibb.co/0yTDbGqH/Whats-App-mage-2026-02-01-at-13-40-07.jpg" alt="Whats-App-mage-2026-02-01-at-13-40-07"
+          alt="heyy"
+        />
+        <button
+          class="button"
+          id="yes"
+          onmouseenter="happy()"
+          onmouseleave="normal()"
+          onclick="ly2()"
+        >
+          Love You Too 🥰
+        </button>
+      </div>
+    </div>
 
-/* ✅ SCROLL SADECE BURADA */
-#page {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+    <div id="model" class="model">
+      <audio id="sadMusic" style="opacity: 0" controls loop>
+        <source src="./resources/sad.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="model-content">
+        <p class="modelText" id="modelText">Lütfenn</p>
+        <img
+          class="modelImg"
+          id="modelImg"
+          src="https://media1.tenor.com/images/9413ffc5a11722a3cc456a88810750bd/tenor.gif?itemid=14193216"
+        />
+        <div class="flex">
+          <button
+            class="button"
+            id="yes"
+            onmouseenter="happy()"
+            onmouseleave="normal()"
+            onclick="yes()"
+          >
+            Evet 🥰
+          </button>
+          <button
+            class="button"
+            id="no"
+            onmouseenter="angry()"
+            onmouseleave="normal()"
+            onclick="no()"
+          >
+            Hayır 😭
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main2.js"></script>
+</html>
+/* =========================
+   MOBILE SAFARI SCROLL FIX
+   ========================= */
+
+/* ❌ body scroll kilidini kaldır */
+html,
+body {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
   -webkit-overflow-scrolling: touch;
 }
 
-/* ❌ TOUCH YUTAN KATMANLAR */
-.absImages,
+/* ❌ 100vh Safari bug fix */
+body {
+  position: relative !important;
+}
+
+/* ❌ fixed olan container'lar scroll'u bozuyor */
+.absImages {
+  position: absolute !important;
+}
+
+/* ❌ modal açıkken bile sayfa scroll olabilir */
 .model {
-  pointer-events: none;
+  position: absolute !important;
 }
 
-/* ✅ MODAL İÇİ TIKLANABİLİR */
-.model-content,
-button {
-  pointer-events: auto;
-}
-
-/* 🖼️ MOBIL IMAGE FIX */
-img {
-  max-width: 100%;
-  height: auto;
-}
